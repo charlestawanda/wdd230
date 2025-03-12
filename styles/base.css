@@ -1,0 +1,99 @@
+/* base.css */
+
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Body font */
+    line-height: 1.6;
+    color: #333; /* Text color */
+    background-color: #f9f9f9; /* Light background color for contrast */
+}
+
+header {
+    background-color: #43164e; /* Header background color */
+    color: rgb(130, 205, 207);
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+img
+{
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    margin-right: 15px;
+}
+
+nav {
+    background-color: #222022; /* Dark navigation background */
+    display: grid;
+}
+
+nav ul {
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center nav items */
+    flex-direction: column; /* putting it in a column form */
+}
+
+nav ul li {
+    margin: 0 15px; /* Consistent spacing */
+}
+
+nav ul li a {
+    color: rgb(115, 187, 192); /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Important for contrast */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Add underline on hover for interaction */
+}
+
+.active::before {
+    content: "💖";
+}
+
+.panashe {
+    display: grid;
+    grid-template-columns: 1fr; /* Default for small screens */
+    gap: 20px; /* Spacing between cards */
+    padding: 20px; /* Padding around main content */
+}
+
+/* Card styles */
+.card {
+    background-color: #d1a5ce; /* White background for cards */
+    border: 1px solid #572766; /* Light border for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    box-shadow: 0 2px 5px rgba(73, 10, 73, 0.1); /* Soft shadow for depth */
+}
+
+/* Headings */
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Different font for headings */
+    color: #121612; /* Darker color for main heading */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif; /* Different font for headings */
+    color: #0a0606; /* Darker color for subheadings */
+}
+
+footer {
+    background-color: #0e0c0d; /* Dark footer background */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Padding in footer */
+    text-align: center; /* Center align text in footer */
+}
+
+footer p {
+    margin: 5px 0; /* Keep footer paragraphs close but not crammed */
+}
+
+#lastModified {
+    color: aqua;
+}
