@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: aqua;
+}
+#wire
+{
+    background-color: #d1a5ce; /* White background for cards */
+    border: 1px solid #572766; /* Light border for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    box-shadow: 0 2px 5px rgba(73, 10, 73, 0.1); /* Soft shadow for depth */
+
+}
+#wire img
+{
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    margin-right: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
