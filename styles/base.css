@@ -10,6 +10,10 @@ body {
     background-color: #f9f9f9; /* Light background color for contrast */
 }
 
+.hide {
+    display: none;
+}
+
 header {
     background-color: #43164e; /* Header background color */
     color: rgb(130, 205, 207);
@@ -24,9 +28,16 @@ img
     margin-right: 15px;
 }
 
+#ham::after{
+    content: "⩓";
+    color: #0a0606;
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+}
+
 nav {
     background-color: #222022; /* Dark navigation background */
-    display: grid;
 }
 
 nav ul {
