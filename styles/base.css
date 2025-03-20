@@ -61,6 +61,18 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline; /* Add underline on hover for interaction */
+    color: blue;
+}
+* Hamburger Menu Styling */
+#hamburger {
+  display: block; /* Show the hamburger on smaller screens */
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+#hamburger {
+    display: none;
 }
 
 .active::before {

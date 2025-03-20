@@ -15,6 +15,10 @@
     nav ul li {
         margin: 0 25px; /* Increased horizontal spacing for links */
     }
+    #hamburger {
+        display: inline-block; /* Show the hamburger menu */
+        margin-right: 20px; /* Add some spacing */
+    }
 
     /* Main Styles */
     .panashe {
