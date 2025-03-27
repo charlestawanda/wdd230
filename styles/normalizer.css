@@ -1,0 +1,32 @@
+/* Custom Normalization Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; /* Specify a font family */
+    line-height: 1.6;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Additional normalization for links and form elements */
+  a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Example link color */
+  }
+  
+  input, button, select {
+    font-family: inherit; /* Inherit the font from the body */
+    font-size: 100%; /* Reset the font size */
+  }
+  

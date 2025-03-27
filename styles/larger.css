@@ -1,43 +1,48 @@
-/* larger.css */
-
-/* Use a media query with min-width for larger views */
-@media screen and (min-width: 600px) {
-
-    /* Navigation Styles */
-
-    nav, .hide {
-        display: grid;
+/* Responsive Styling (styles/larger.css) */
+@media (min-width: 768px) {
+    header {
+      justify-content: space-between;
     }
+  
+    nav {
+      flex-direction: row; /* Horizontal on larger screens */
+    }
+  
     nav ul {
         flex-direction: row; /* Align items in a horizontal row */
     }
-
-    nav ul li {
-        margin: 0 25px; /* Increased horizontal spacing for links */
+  
+    nav a {
+      margin-right: 20px; /* Ensure spacing is consistent */
     }
-    #hamburger {
-        display: inline-block; /* Show the hamburger menu */
-        margin-right: 20px; /* Add some spacing */
+  
+    main {
+      grid-template-columns: 2fr 1fr; /* Two columns on larger screens */
     }
-
-    /* Main Styles */
+  
     .panashe {
-        grid-template-columns: 2fr 1fr; /* Two columns for the cards */
-        gap: 20px; /* Space between the grid items */
-    }
+      grid-template-columns: 2fr 1fr; /* Two columns for the cards */
+      gap: 20px; /* Space between the grid items */
+  }
 
-    .card {
-        padding: 25px; /* Increased padding for larger views */
-    }
+  .card {
+      padding: 25px; /* Increased padding for larger views */
+  }
 
-    /* Remove bullet points from links in cards */
-    .card ul {
-        list-style-type: none; /* No bullet points */
-        padding: 0; /* Remove default padding */
+  /* Remove bullet points from links in cards */
+  .card ul {
+      list-style-type: none; /* No bullet points */
+      padding: 0; /* Remove default padding */
+  }
+  
+    /* Hide hamburger menu on larger screens */
+    #hamburger {
+      display: none; /* Hide hamburger menu */
     }
-
-    /* Headings */
-    h1, h2 {
-        text-align: left; /* Align text to the left for larger views */
+  
+    /* Center the title */
+    h1 {
+      text-align: center; 
     }
-}
+  }
+  

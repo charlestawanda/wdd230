@@ -1,60 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tawanda Samatanda - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development [Tawanda Samatanda] course assignment portal">
-    <meta name="author" content="[Tawanda Samatanda]">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Tawanda Samatanda - WDD 230 - Web Frontend Development</title>
+  <meta name="description" content="WDD 230 - Web Frontend Development [Tawanda Samatanda] course assignment portal">
+  <meta name="author" content="[Tawanda Samatanda]">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <meta property="og:title" content="tawanda samatanda - WDD 230 - Web Frontend Development">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D35AQGeWyfvuaEt-A/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1735230788051?e=1742418000&v=beta&t=NsSC1lvCe0TIhKTPf8P9bDc2S9VvdeFQoWsHNV-cJAA">
+  <meta property="og:url" content="https://github.com/Kishvell">
+  <meta property="og:description" content="WDD230 Website of BYU Idaho Student.">
+  <link rel="stylesheet" href="styles/normalize.css"> 
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <header>
-        <img src="images/profile.jpg" alt="Profile Photo" />
-        <span>[Tawanda Samatanda]</span>
-        <a href="" id="ham"></a>
-    </header>
+  <header>
+    <img src="images/profile.jpg" alt="Profile Photo" />
+        <span>[Tawanda Samatanda]</span> 
+  </header>
+  <nav>
+    <button id="hamburger" aria-label="Toggle menu">☰</button> 
+    <ul id="main-menu" class="hidden">
+      <li><a href="#">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li><a href="chamber-site-plan.html">Site Plan</a></li>
+      <li><a href="#">Form</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>WDD 230: Web Frontend Development</h1>
+    <div class="panashe">
+      <section class="card">
+          <h2>Learning Activities</h2>
+          <ul>
+              <li><a href="#activity1" target="_blank">holigrid</a></li>
+              <li><a href="#activity2" target="_blank">Activity 2</a></li>
+              <li><a href="#activity3" target="_blank">Activity 3</a></li>
+              <li><a href="#activity4" target="_blank">Activity 4</a></li>
+          </ul>
+      </section>
 
-    <nav>
-        <button id="hamburger" aria-label="Toggle menu">☰</button>
-        <ul class="hide">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#chamber">Chamber</a></li>
-            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="#form">Form</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <div class="panashe">
-            <section class="card">
-                <h2>Learning Activities</h2>
-                <ul>
-                    <li><a href="#activity1" target="_blank">Activity 1</a></li>
-                    <li><a href="#activity2" target="_blank">Activity 2</a></li>
-                    <li><a href="#activity3" target="_blank">Activity 3</a></li>
-                    <li><a href="#activity4" target="_blank">Activity 4</a></li>
-                </ul>
-            </section>
-    
-            <section class="card">
-                <h2>Information</h2>
-                <p>Weather Information: [Placeholder]</p>
-                <p>Number of Visits: [Placeholder]</p>
-            </section>
-        </div>
-        
-    </main>
-
-    <footer>
-        <p>&copy;<span id="currentYear"></span> [Tawanda Samatanda]. [Harare - Zimbabwe]</p>
-        <p> <span id="lastModified"> [great day] </span></p>
-    </footer>
-    <script src="./scripts/getDates.js"></script>
+      <section class="card">
+          <h2>Information</h2>
+          <p>Weather Information: [Placeholder]</p>
+          <p>Number of Visits: [Placeholder]</p>
+      </section>
+  </div>
+ 
+    <section class="card">
+      <h2>Information</h2>
+      <p>Placeholder for weather information.</p>
+      <p>Placeholder for number of visits.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© <span id="copyrightYear"></span> [tawanda samatanda]</p>
+    <p id="lastModified">have a great day.</p>
+  </footer>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

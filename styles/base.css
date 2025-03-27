@@ -1,85 +1,70 @@
-/* base.css */
-
-/* Reset some default styles */
+/* General Styling */
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "Special Elite", system-ui; /* Body font */
+    background-color: #413e3f;
+    color: #333;
     line-height: 1.6;
-    color: #333; /* Text color */
-    background-color: #f9f9f9; /* Light background color for contrast */
-}
-
-.hide {
-    display: none;
-}
-
-header {
+  }
+  
+  header {
     background-color: #43164e; /* Header background color */
     color: rgb(130, 205, 207);
     text-align: center;
     padding: 20px;
     font-weight: bold;
 }
-img
-{
+  
+  header img {
     width: 100px; /* Adjust size as needed */
     height: 100px; /* Adjust size as needed */
     margin-right: 15px;
-}
-
-#ham::after{
-    content: "⩓";
-    color: #0a0606;
-    position: absolute;
-    right: 20px;
-    font-size: 30px;
-}
-
-nav {
-    background-color: #222022; /* Dark navigation background */
-}
-
-nav ul {
+  }
+  
+  nav {
+    background-color: #ce0eb4;
+    padding: 10px;
+    color: #4b4747;
+    display: flex;
+    flex-direction: column; /* Vertical on smaller screens */
+  }
+  
+  nav ul {
     padding: 10px;
     margin: 0;
     list-style-type: none;
     display: flex; /* Flexbox for horizontal alignment */
     justify-content: center; /* Center nav items */
-    flex-direction: column; /* putting it in a column form */
-}
-
-nav ul li {
-    margin: 0 15px; /* Consistent spacing */
-}
-
-nav ul li a {
-    color: rgb(115, 187, 192); /* Link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Important for contrast */
-}
-
-nav ul li a:hover {
-    text-decoration: underline; /* Add underline on hover for interaction */
-    color: blue;
-}
-* Hamburger Menu Styling */
-#hamburger {
-  display: block; /* Show the hamburger on smaller screens */
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-#hamburger {
-    display: none;
-}
-
-.active::before {
-    content: "💖";
-}
-
-.panashe {
+    flex-direction: column; /* putting it in a column form */}
+  
+  nav ul li {
+    margin-right: 0 15px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #413c3c;
+  }
+  nav a:hover {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: aqua;
+  }
+  
+  main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ca06ca;
+    display: grid;
+    grid-template-columns: 1fr; /* One column on smaller screens */
+    gap: 20px;
+  }
+  
+  .panashe {
     display: grid;
     grid-template-columns: 1fr; /* Default for small screens */
     gap: 20px; /* Spacing between cards */
@@ -94,29 +79,70 @@ nav ul li a:hover {
     padding: 15px; /* Padding inside the card */
     box-shadow: 0 2px 5px rgba(73, 10, 73, 0.1); /* Soft shadow for depth */
 }
-
-/* Headings */
-h1 {
-    font-family: 'Montserrat', sans-serif; /* Different font for headings */
-    color: #121612; /* Darker color for main heading */
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif; /* Different font for headings */
-    color: #0a0606; /* Darker color for subheadings */
-}
-
-footer {
-    background-color: #0e0c0d; /* Dark footer background */
-    color: white; /* White text for contrast */
-    padding: 20px; /* Padding in footer */
-    text-align: center; /* Center align text in footer */
-}
-
-footer p {
-    margin: 5px 0; /* Keep footer paragraphs close but not crammed */
-}
-
-#lastModified {
+  footer {
+    background-color: #08794d;
+    color: #e4e4e4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Additional Styling (Optional) */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Hamburger Menu Styling */
+  #hamburger {
+    display: block; /* Show the hamburger on smaller screens */
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #main-menu.hidden {
+    display: none;
+  }
+  
+  /* Responsive Styling (styles/larger.css) */
+  @media (min-width: 768px) {
+    nav {
+      flex-direction: row; /* Horizontal on larger screens */
+    }
+  
+    nav a {
+      margin-right: 20px;
+    }
+  
+    main {
+      grid-template-columns: 2fr 1fr; /* Two columns on larger screens */
+    }
+  
+    /* Center the title */
+    h1 {
+        text-align: center; 
+    }
+  }
+  #lastModified {
     color: aqua;
 }
