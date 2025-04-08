@@ -1,69 +1,80 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-  
+<html lang="en">
+
+<head>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Tawanda Samatanda - WDD 230 - Web Frontend Development</title>
   <meta name="description" content="WDD 230 - Web Frontend Development [Tawanda Samatanda] course assignment portal">
   <meta name="author" content="[Tawanda Samatanda]">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <meta property="og:title" content="tawanda samatanda - WDD 230 - Web Frontend Development">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D35AQGeWyfvuaEt-A/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1735230788051?e=1742418000&v=beta&t=NsSC1lvCe0TIhKTPf8P9bDc2S9VvdeFQoWsHNV-cJAA">
-  <meta property="og:url" content="https://github.com/Kishvell">
+  <meta property="og:image" content="https://github.com/charlestawanda/wdd230/blob/main/chamber/images/hero.webp">
+  <meta property="og:url" content="https://charlestawanda.github.io/wdd230/index.html">
   <meta property="og:description" content="WDD230 Website of BYU Idaho Student.">
-  <link rel="stylesheet" href="styles/normalize.css"> 
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/larger.css">
-</head>
-<body>
-  <header>
-    <img src="images/profile.jpg" alt="Profile Photo" />
-        <span>[Tawanda Samatanda]</span> 
-  </header>
-  <nav>
-    <button id="hamburger" aria-label="Toggle menu">☰</button> 
-    <ul id="main-menu" class="hidden">
-      <li><a href="#">Home</a></li>
-      <li><a href="chamber/index.html">Chamber</a></li>
-      <li><a href="chamber-site-plan.html">Site Plan</a></li>
-      <li><a href="#">Form</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h1>WDD 230: Web Frontend Development</h1>
-    <div class="panashe">
-      <section class="card">
-          <h2>Learning Activities</h2>
-          <ul>
-              <li><a href="#activity1" target="_blank">holigrid</a></li>
-              <li><a href="#activity2" target="_blank">Activity 2</a></li>
-              <li><a href="#activity3" target="_blank">Activity 3</a></li>
-              <li><a href="#activity4" target="_blank">Activity 4</a></li>
-          </ul>
-      </section>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
 
-      <section class="card">
-          <h2>Information</h2>
-          <p>Weather Information: [Placeholder]</p>
-          <p>Number of Visits: [Placeholder]</p>
-      </section>
-  </div>
- 
-    <section class="card">
-      <h2>Information</h2>
-      <p>Placeholder for weather information.</p>
-      <p>Placeholder for number of visits.</p>
-    </section>
-  </main>
-  <footer>
-    <p>© <span id="copyrightYear"></span> [tawanda samatanda]</p>
-    <p id="lastModified">have a great day.</p>
-  </footer>
-  <script src="scripts/getDates.js"></script>
-  <script src="scripts/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Tawanda Samatanda" width="150" height="150">
+        <span>Tawanda Samatanda</span>
+    </header>
+    <button type="button" id="menu" aria-label="Open and close main menu"></button>
+    <nav>
+        <ul class="navigation">
+            <li class="active"><a href="index.html" aria-label="Link to home page">Home</a></li>
+            <li><a href="https://charlestawanda.github.io/wdd230/week01/chamber-site-plan.html"
+                    aria-label="Link to Ogden City's Chamber of Commerce website">Chamber</a></li>
+            <li><a href="" aria-label="Link to site plan">Site Plan</a></li>
+            <li><a href="" aria-label="Link to form">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <img src="images/nigeria.jpeg" alt="aba-nigeria" width="16" height="9">
+            </picture>
+            <div>
+                <a href="https://www.churchofjesuschrist.org/temples/details/ogden-utah-temple?lang=eng"
+                    aria-label="Link to the aba nigeria temple's webpage">aba-nigeria
+                    Temple</a>
+            </div>
+        </div>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card">
+            <h2>Learning Activites</h2>
+            <ul>
+                <li>Learning 01:</li>
+                <li>Learning 02:</li>
+                <li>Learning 03:</li>
+                <li>Learning 04:</li>
+                <li>Learning 05:</li>
+                <li>Learning 06:</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Information</h2>
+            <p>Sunny ☀️ | 65°F</p>
+            <p class="visits"></p>
+        </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96030.16260952657!2d-112.05549561338628!3d41.223021731063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87530e94da9c4d7b%3A0x61dcd77b34b32c!2sOgden%2C%20UT!5e0!3m2!1sen!2sus!4v1742771260535!5m2!1sen!2sus"
+            title="Ogden Utah's Google Maps Link" width="1000" height="334" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
+
 </html>

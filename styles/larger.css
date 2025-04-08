@@ -1,48 +1,35 @@
-/* Responsive Styling (styles/larger.css) */
-@media (min-width: 768px) {
-    header {
-      justify-content: space-between;
-    }
-  
-    nav {
-      flex-direction: row; /* Horizontal on larger screens */
-    }
-  
-    nav ul {
-        flex-direction: row; /* Align items in a horizontal row */
-    }
-  
-    nav a {
-      margin-right: 20px; /* Ensure spacing is consistent */
-    }
-  
-    main {
-      grid-template-columns: 2fr 1fr; /* Two columns on larger screens */
-    }
-  
-    .panashe {
-      grid-template-columns: 2fr 1fr; /* Two columns for the cards */
-      gap: 20px; /* Space between the grid items */
+@media screen and (min-width: 500px) {
+
+  #menu {
+      display: none;
   }
 
-  .card {
-      padding: 25px; /* Increased padding for larger views */
+
+  .navigation.open,
+  .navigation {
+      display: flex;
   }
 
-  /* Remove bullet points from links in cards */
-  .card ul {
-      list-style-type: none; /* No bullet points */
-      padding: 0; /* Remove default padding */
+  nav ul li {
+      flex: 1 1 100%;
   }
-  
-    /* Hide hamburger menu on larger screens */
-    #hamburger {
-      display: none; /* Hide hamburger menu */
-    }
-  
-    /* Center the title */
-    h1 {
-      text-align: center; 
-    }
+  .hero div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  main {
+      grid-template-columns: 2fr 1fr;
+  }
+
+  h1 {
+      grid-column: 1 / 3;
+  }
+}
   

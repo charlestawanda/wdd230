@@ -1,10 +1,34 @@
-const copyrightYear = document.getElementById('copyrightYear');
-const lastModifiedDate = document.getElementById('lastModified');
+/* FOOTER */
+const cYear = document.getElementById("copyright");
+const mDate = document.getElementById("lastModified");
 
-const currentYear = new Date().getFullYear();
-copyrightYear.textContent = currentYear;
+let copyrightYear = new Date();
+let lastModified = new Date(document.lastModified);
 
-lastModifiedDate.textContent = `Last Modified: ${document.lastModified}`;
+cYear.textContent = `©${copyrightYear.getFullYear()} | Tawanda Samatanda `;
+mDate.textContent = `Last Modification: ${lastModified.toLocaleString('de-DE')}`;
 
-document.getElementById('copyrightYear').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+/* MENU */
+const menuButton = document.querySelector('#menu');
+const navMenu = document.querySelector('.navigation');
+
+menuButton.addEventListener('click', () => {
+    menuButton.classList.toggle('open');
+    navMenu.classList.toggle('open');
+});
+
+
+/* Visits Counter */
+const visitsCounter = document.querySelector('.visits');
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+    visitsCounter.textContent = `Visits Count: ${numVisits + 1}`;
+} else {
+    visitsCounter.textContent = `Welcome to my website!`;
+}
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
